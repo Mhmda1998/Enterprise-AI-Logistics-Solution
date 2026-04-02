@@ -1,3 +1,7 @@
+---
+
+### 2️⃣ الملف الثاني: `requirements.txt` (المكتبات المطلوبة)
+```text
 fastapi
 uvicorn
 google-generativeai
@@ -5,3 +9,6 @@ streamlit
 pandas
 plotly
 python-multipart
+python-dotenv
+requests
+openpyxl
