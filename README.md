@@ -7,15 +7,15 @@
 <table border="0">
   <tr>
     <td align="center">
-      <img src="IMG_1451.jpeg" width="300" alt="Main Dashboard">
+      <img src="./IMG_1451.jpeg" width="300" alt="Dashboard">
       <br><b>Main Dashboard</b><br>لوحة التحكم الرئيسية
     </td>
     <td align="center">
-      <img src="IMG_1452.jpeg" width="300" alt="AI Assistant">
+      <img src="./IMG_1452.jpeg" width="300" alt="Assistant">
       <br><b>AI Assistant</b><br>المساعد الذكي
     </td>
     <td align="center">
-      <img src="IMG_1453.jpeg" width="300" alt="Data Center">
+      <img src="./IMG_1453.jpeg" width="300" alt="Data Center">
       <br><b>Data Center</b><br>مركز البيانات
     </td>
   </tr>
