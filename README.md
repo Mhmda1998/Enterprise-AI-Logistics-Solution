@@ -1,27 +1,36 @@
-# 🌍 Global AI Logistics & Enterprise Solution
-### Developed by Mohammed Ibrahim Ghabban (GEAR Certified Developer)
-
-This project is an **Enterprise-grade Autonomous Logistics Agent** powered by **Google Gemini 1.5 Pro**. It is designed to handle complex logistics supply chains, real-time tracking, and automated decision-making.
+# 🌐 Global AI Logistics & Enterprise Solution
+### Developed by: **Mohammed Ibrahim Ghabban** (GEAR Certified Developer) 🏆
 
 ---
 
-## 🚀 Key Features
-- **Smart Logistics Agent:** Uses Gemini 1.5 Pro for intelligent reasoning.
-- **Secure API Gateway:** High-performance FastAPI backend (`main.py`).
-- **Executive Dashboard:** Real-time visual analytics (`dashboard.py`).
-
-## 🛠 Tech Stack
-* **Core AI:** Google Gemini 1.5 Pro (GEAR Certified workflow)
-* **Backend:** Python / FastAPI
-* **Frontend:** Streamlit Cloud
-* **Data Viz:** Plotly & Pandas
+## 📸 System Snapshots | لقطات من النظام
+<table border="0">
+  <tr>
+    <td align="center"><img src="IMG_1451.jpeg" width="300"><b><br>Main Dashboard<br>لوحة التحكم الرئيسية<b></td>
+    <td align="center"><img src="IMG_1452.jpeg" width="300"><b><br>AI Assistant<br>المساعد الذكي<b></td>
+    <td align="center"><img src="IMG_1453.jpeg" width="300"><b><br>Data Center<br>مركز البيانات<b></td>
+  </tr>
+</table>
 
 ---
 
-## 👨‍💻 About the Developer
-**Mohammed Ibrahim Ghabban** - Software Developer specializing in AI-driven automation.
-* **Certification:** Gemini Enterprise Agent Ready (GEAR)
-* **Specialization:** Python, FastAPI, and AI Integrations.
+## 🚀 Overview | نبذة عن المشروع
+هذا المشروع عبارة عن عميل لوجستي ذاتي التشغيل (Autonomous Logistics Agent) مدعوم بقدرات الذكاء الاصطناعي من **Gemini 1.5 Pro**.
+
+This is an Enterprise-grade Autonomous Logistics Agent powered by **Google Gemini 1.5 Pro**.
 
 ---
-*© 2026 Mohammed Ibrahim Ghabban - All Rights Reserved.*
+
+## ✨ Key Features | المميزات الرئيسية
+* **Smart AI Agent:** Uses Gemini 1.5 Pro reasoning.
+* **Interactive Dashboard:** Real-time analytics built with Streamlit.
+* **Data Visualizations:** Dynamic charts powered by Plotly.
+* **Secure File Upload:** CSV/Excel support.
+
+---
+
+## ⚖️ License & Rights | الحقوق والملكية
+**© 2026 Mohammed Ibrahim Ghabban.**
+All rights reserved. Unauthorized commercial use without permission is prohibited.
+
+جميع الحقوق محفوظة لـ **محمد إبراهيم غبان**. يُمنع استخدامه تجارياً دون إذن مسبق.
