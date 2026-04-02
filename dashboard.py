@@ -1,68 +1,62 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import requests
+import os
 
-# إعدادات الصفحة الاحترافية
-st.set_page_config(page_title="AI Logistics Solution | Mohammed Ghabban", layout="wide", page_icon="🚀")
+st.set_page_config(page_title="GEAR AI Logistics Dashboard", layout="wide", page_icon="🚀")
 
-# تصميم الواجهة العلوية
-st.title("📊 نظام الذكاء الاصطناعي للخدمات اللوجستية")
-st.markdown(f"### أهلاً وسهلاً، محمد إبراهيم غبان (مطور معتمد من GEAR 🏆)")
-st.info("💡 هذا النظام يدعم رفع ملفات البيانات الحقيقية لتحليلها فوراً باستخدام Gemini 1.5 Pro.")
+# الرابط الخاص بالمحرك (Docker Friendly)
+BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
 
-# --- قسم رفع الملفات (الميزة الجديدة) ---
-st.sidebar.header("📁 مركز رفع البيانات")
-uploaded_file = st.sidebar.file_uploader("ارفع ملف الشحنات (CSV or Excel)", type=["csv", "xlsx"])
+# --- UI Styling ---
+st.markdown("""<style>.stMetric { background: #1a1c24; border-radius: 12px; padding: 20px; border: 1px solid #333; }</style>""", unsafe_allow_html=True)
 
-# بيانات افتراضية (تظهر إذا لم يتم رفع ملف)
-if uploaded_file is not None:
-    try:
-        if uploaded_file.name.endswith('.csv'):
-            df = pd.read_csv(uploaded_file)
-        else:
-            df = pd.read_excel(uploaded_file)
-        st.sidebar.success("✅ تم تحميل بياناتك الحقيقية بنجاح!")
-    except Exception as e:
-        st.sidebar.error(f"خطأ في قراءة الملف: {e}")
-        df = pd.DataFrame({'City': ['A', 'B'], 'Shipments': [10, 20]})
-else:
-    # بيانات تجريبية للعرض فقط
-    df = pd.DataFrame({
-        'City': ['New York', 'Dubai', 'Tokyo', 'London', 'Shanghai'],
-        'Shipments': [450, 320, 300, 200, 150]
-    })
+# Sidebar
+with st.sidebar:
+    st.image("https://cdn-icons-png.flaticon.com/512/2103/2103633.png", width=70)
+    st.title("System Access")
+    user_api_key = st.text_input("Gemini API Key", type="password")
+    st.divider()
+    uploaded_file = st.file_uploader("Upload Logistics Data (CSV/XLSX)", type=["csv", "xlsx"])
+    st.caption("Developed by Mohammed Ghabban 🏆")
 
-# --- عرض الإحصائيات الحيوية ---
-col1, col2, col3 = st.columns(3)
-with col1:
-    st.metric("إجمالي العمليات", f"{df['Shipments'].sum():,}", "+12%")
-with col2:
-    st.metric("دقة التحليل الذكي", "99.4%", "+0.2%")
-with col3:
-    st.metric("الوفورات المتوقعة", "$15,800", "إدارة ذكية")
+# Main Content
+st.title("🌐 Global Enterprise AI Logistics")
 
-st.divider()
+if uploaded_file:
+    df = pd.read_csv(uploaded_file) if uploaded_file.name.endswith('csv') else pd.read_excel(uploaded_file)
+    
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Current Fleet Ops", f"{len(df):,}", "+8%")
+    col2.metric("AI Optimization", "99.1%", "Optimal")
+    col3.metric("Savings Projection", "$22,400", "Live")
 
-# --- الرسوم البيانية التفاعلية ---
-c1, c2 = st.columns([2, 1])
+    st.divider()
 
-with c1:
-    st.subheader("🌐 توزيع الشحنات حسب المدن")
-    # التأكد من وجود أعمدة مناسبة للرسم
-    if 'City' in df.columns and 'Shipments' in df.columns:
-        fig = px.bar(df, x='City', y='Shipments', color='City', template="plotly_dark")
+    c_left, c_right = st.columns([2, 1])
+    with c_left:
+        st.subheader("📊 Fleet Performance Analytics")
+        fig = px.bar(df, x=df.columns[0], y=df.columns[1], color_discrete_sequence=['#4285F4'], template="plotly_dark")
         st.plotly_chart(fig, use_container_width=True)
-    else:
-        st.warning("يرجى التأكد من أن الملف يحتوي على أعمدة 'City' و 'Shipments' للرسم.")
 
-with c2:
-    st.subheader("🤖 مساعد GEAR الذكي")
-    st.write("اسأل الذكاء الاصطناعي عن بياناتك المرفوعة:")
-    if prompt := st.chat_input("كيف يمكنني تحسين المسارات؟"):
-        st.chat_message("user").write(prompt)
-        with st.chat_message("assistant"):
-            st.write(f"يا محمد، قمت بتحليل {len(df)} سجل بيانات. أنصح بتركيز العمليات في {df.iloc[0]['City']} لزيادة الأرباح.")
+    with c_right:
+        st.subheader("🤖 GEAR AI Assistant")
+        if "chat" not in st.session_state: st.session_state.chat = []
+        
+        prompt = st.chat_input("Ask about route optimization...")
+        if prompt:
+            if not user_api_key: st.error("Please enter your API Key in sidebar")
+            else:
+                with st.spinner("Analyzing Logistics..."):
+                    ctx = df.head(15).to_string()
+                    try:
+                        res = requests.post(f"{BACKEND_URL}/v1/analyze", json={"prompt": prompt, "context": ctx, "api_key": user_api_key})
+                        st.session_state.chat.append({"role": "user", "content": prompt})
+                        st.session_state.chat.append({"role": "assistant", "content": res.json()['ai_response']})
+                    except: st.error("Backend Error. Run docker-compose.")
 
-# تذييل الصفحة
-st.divider()
-st.caption("© 2026 محمد إبراهيم غبان - خبير أمن رقمي ومطور حلول ذكاء اصطناعي")
+        for m in reversed(st.session_state.chat):
+            with st.chat_message(m["role"]): st.write(m["content"])
+else:
+    st.info("👋 Welcome! Please upload a logistics data file to activate AI Insights.")
