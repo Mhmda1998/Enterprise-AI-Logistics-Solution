@@ -7,15 +7,15 @@
 <table border="0">
   <tr>
     <td align="center">
-      <img src="IMG_1451.jpeg" width="300" alt="Main Dashboard">
+      <img src="https://i.ibb.co/KzSd5YZP/IMG-1465.png" width="300">
       <br><b>Main Dashboard</b><br>لوحة التحكم الرئيسية
     </td>
     <td align="center">
-      <img src="IMG_1452.jpeg" width="300" alt="AI Assistant">
+      <img src="https://i.ibb.co/JjKSh9qs/IMG-1466.png" width="300">
       <br><b>AI Assistant</b><br>المساعد الذكي
     </td>
     <td align="center">
-      <img src="IMG_1453.jpeg" width="300" alt="Data Center">
+      <img src="https://i.ibb.co/VpDDHTyb/IMG-1467.png" width="300">
       <br><b>Data Center</b><br>مركز البيانات
     </td>
   </tr>
@@ -31,16 +31,15 @@ This is an Enterprise-grade Autonomous Logistics Agent powered by **Google Gemin
 ---
 
 ## ✨ Key Features | المميزات الرئيسية
-* **Smart AI Agent:** Uses Gemini 1.5 Pro reasoning (Simulated in Public Mode).
+* **Smart AI Agent:** Powered by Gemini 1.5 Pro reasoning (GEAR Certified workflow).
 * **Interactive Dashboard:** Real-time logistics analytics built with Streamlit.
 * **Data Visualizations:** Dynamic and interactive charts powered by Plotly & Pandas.
-* **Secure File Upload:** Safe handling for CSV and Excel logistical data.
-* **Cybersecurity Mindset:** Built with secure coding practices and GEAR protocols.
+* **Cybersecurity Mindset:** Built with secure coding practices and enterprise protocols.
 
 ---
 
 ## 🛠️ Tech Stack | التقنيات المستخدمة
-* **AI Core:** Google Gemini 1.5 Pro (GEAR Certified workflow)
+* **AI Core:** Google Gemini 1.5 Pro
 * **Backend:** Python / FastAPI
 * **Frontend:** Streamlit Cloud
 * **Data Engine:** Pandas & Plotly Express
