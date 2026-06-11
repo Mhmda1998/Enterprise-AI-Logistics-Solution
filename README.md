@@ -115,6 +115,8 @@ streamlit run src/dashboard.py
 - 📘 [API Reference](docs/API.md) — Complete API documentation
 - 🏛️ [Architecture Guide](docs/ARCHITECTURE.md) — System design & modules
 - 🤝 [Contributing Guide](CONTRIBUTING.md) — How to contribute
+- 💖 [Support Guide](SUPPORT.md) — How to support the project
+- 🏆 [Sponsors](SPONSOR.md) — Sponsor tiers and benefits
 - 💡 [Usage Examples](examples/) — Code examples and sample data
 
 ---
@@ -237,7 +239,10 @@ Enterprise-AI-Logistics-Solution/
 ├── .gitignore
 ├── LICENSE
 ├── README.md
-└── CONTRIBUTING.md
+├── CONTRIBUTING.md
+├── SUPPORT.md
+├── SPONSOR.md
+└── CHANGELOG.md
 ```
 
 ---
@@ -261,6 +266,7 @@ Enterprise-AI-Logistics-Solution/
 - [x] Comprehensive test suite
 - [x] CI/CD pipeline
 - [x] API documentation
+- [x] Sponsorship & support channels
 - [ ] WebSocket support for real-time updates
 - [ ] Multi-tenant support
 - [ ] Integration with ERP systems (SAP, Oracle)
@@ -307,9 +313,17 @@ Distributed under the MIT License. See [`LICENSE`](LICENSE) for more information
 
 ---
 
-## ⭐ Show your support | أظهر دعمك
+## 💖 Show your Support | أظهر دعمك
 
-If this project helped you, please give it a ⭐! It motivates me to keep building.
+If this project helped you, please support it! See [SUPPORT.md](SUPPORT.md) for all the ways you can help.
+
+<p align="center">
+  <a href="https://github.com/Mhmda1998/Enterprise-AI-Logistics-Solution"><img src="https://img.shields.io/badge/⭐_Star_this_Repo-black?style=for-the-badge" alt="Star"/></a>
+  &nbsp;
+  <a href="https://github.com/Mhmda1998/Enterprise-AI-Logistics-Solution/issues"><img src="https://img.shields.io/badge/🐛_Report_Bug-black?style=for-the-badge" alt="Report Bug"/></a>
+  &nbsp;
+  <a href="https://github.com/Mhmda1998/Enterprise-AI-Logistics-Solution/blob/main/SUPPORT.md"><img src="https://img.shields.io/badge/💖_Sponsor-black?style=for-the-badge" alt="Sponsor"/></a>
+</p>
 
 ---
 
