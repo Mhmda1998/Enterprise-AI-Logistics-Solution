@@ -115,8 +115,6 @@ streamlit run src/dashboard.py
 - 📘 [API Reference](docs/API.md) — Complete API documentation
 - 🏛️ [Architecture Guide](docs/ARCHITECTURE.md) — System design & modules
 - 🤝 [Contributing Guide](CONTRIBUTING.md) — How to contribute
-- 💖 [Support Guide](SUPPORT.md) — How to support the project
-- 🏆 [Sponsors](SPONSOR.md) — Sponsor tiers and benefits
 - 💡 [Usage Examples](examples/) — Code examples and sample data
 
 ---
@@ -239,10 +237,7 @@ Enterprise-AI-Logistics-Solution/
 ├── .gitignore
 ├── LICENSE
 ├── README.md
-├── CONTRIBUTING.md
-├── SUPPORT.md
-├── SPONSOR.md
-└── CHANGELOG.md
+└── CONTRIBUTING.md
 ```
 
 ---
@@ -258,6 +253,55 @@ Enterprise-AI-Logistics-Solution/
 
 ---
 
+## 💖 Support the Project | دعم المشروع
+
+If you find this project useful, there are several ways to support its development:
+
+### ⭐ Free Ways to Support (Zero Cost)
+
+- 🌟 **Star** this repository on GitHub
+- 🍴 **Fork** and contribute improvements
+- 🐛 **Report bugs** or suggest features via [Issues](https://github.com/Mhmda1998/Enterprise-AI-Logistics-Solution/issues)
+- 📢 **Share** with your network and community
+- 💬 **Join discussions** to help other users
+- 🌍 **Translate** the documentation to other languages
+
+### 💎 Sponsor the Developer | دعم المطور
+
+Help me dedicate more time to building open-source AI solutions. Every contribution matters! 🚀
+
+#### 💎 Cryptocurrency (TON Network)
+
+Send TON or TON-based tokens (USDT, NOT, etc.) to:
+
+```
+UQCxl11ULxxz9X-nvXoNOEgIosMCtHTHcmL032Tylt0u_QMe
+```
+
+📋 **[Click to copy address](https://t.me/wallet?startattach=UQCxl11ULxxz9X-nvXoNOEgIosMCtHTHcmL032Tylt0u_QMe)**
+
+> 💡 You can also send **USDT (TON)**, **NOT**, **jUSDT**, or any **TON-based jetton** to the same address.
+
+#### 🌐 Connect & Follow
+
+- 🐙 **GitHub:** [@Mhmda1998](https://github.com/Mhmda1998)
+- 📧 **Email:** 734402368n@gmail.com
+- 💼 **LinkedIn:** [Mohammed Ghabban](https://linkedin.com/in/mhmda1998)
+- 🐦 **Twitter:** [@Mhmda1998](https://twitter.com/mhmda1998)
+
+#### 🏆 Sponsorship Tiers
+
+| Tier | Contribution | Benefits |
+|------|-------------|----------|
+| 🥉 **Supporter** | 5+ TON | Name in README + early access to new projects |
+| 🥈 **Contributor** | 25+ TON | All Supporter benefits + priority support |
+| 🥇 **Sponsor** | 100+ TON | Logo placement + dedicated roadmap input |
+| 💎 **Patron** | 500+ TON | All benefits + custom feature development |
+
+> 📜 *All sponsorships are voluntary and appreciated. Open-source stays open-source regardless of sponsorship.*
+
+---
+
 ## 🗺️ Roadmap | خارطة الطريق
 
 - [x] Core AI engine with Gemini 1.5 Pro
@@ -266,7 +310,6 @@ Enterprise-AI-Logistics-Solution/
 - [x] Comprehensive test suite
 - [x] CI/CD pipeline
 - [x] API documentation
-- [x] Sponsorship & support channels
 - [ ] WebSocket support for real-time updates
 - [ ] Multi-tenant support
 - [ ] Integration with ERP systems (SAP, Oracle)
@@ -302,32 +345,22 @@ Distributed under the MIT License. See [`LICENSE`](LICENSE) for more information
 - 📧 Email: 734402368n@gmail.com
 - 📍 Location: Sana'a, Yemen 🇾🇪
 - 🎓 Certifications: Google GEAR, AI Specialist, Docker DevOps
+- 💎 TON: `UQCxl11ULxxz9X-nvXoNOEgIosMCtHTHcmL032Tylt0u_QMe`
 
 ---
 
 ## 🙏 Acknowledgments | شكر وتقدير
 
 - Google Gemini team for the powerful AI model
+- TON Foundation for the crypto infrastructure
 - The open-source community for amazing tools
-- All contributors and users of this project
-
----
-
-## 💖 Show your Support | أظهر دعمك
-
-If this project helped you, please support it! See [SUPPORT.md](SUPPORT.md) for all the ways you can help.
-
-<p align="center">
-  <a href="https://github.com/Mhmda1998/Enterprise-AI-Logistics-Solution"><img src="https://img.shields.io/badge/⭐_Star_this_Repo-black?style=for-the-badge" alt="Star"/></a>
-  &nbsp;
-  <a href="https://github.com/Mhmda1998/Enterprise-AI-Logistics-Solution/issues"><img src="https://img.shields.io/badge/🐛_Report_Bug-black?style=for-the-badge" alt="Report Bug"/></a>
-  &nbsp;
-  <a href="https://github.com/Mhmda1998/Enterprise-AI-Logistics-Solution/blob/main/SUPPORT.md"><img src="https://img.shields.io/badge/💖_Sponsor-black?style=for-the-badge" alt="Sponsor"/></a>
-</p>
+- All contributors, sponsors, and users of this project
 
 ---
 
 <div align="center">
+
+### ⭐ Star this repo if you find it useful! ⭐
 
 **Built with ❤️ by Mohammed Ghabban • GEAR Certified Developer**
 
