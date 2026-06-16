@@ -1,0 +1,27 @@
+api:
+  - api/**/*
+  - '**/server.py'
+
+core:
+  - core/**/*
+  - '**/agent.py'
+
+dashboard:
+  - dashboard/**/*
+
+docs:
+  - '**/*.md'
+  - docs/**
+
+tests:
+  - tests/**/*
+  - pytest.ini
+
+ci:
+  - .github/workflows/**
+  - .github/dependabot.yml
+
+docker:
+  - Dockerfile*
+  - docker-compose*.yml
+  - render.yaml
