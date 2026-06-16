@@ -8,7 +8,7 @@ google-generativeai>=0.3.2
 # Dashboard
 streamlit>=1.30.0
 pandas>=2.0.0
-plotly>=5.18.0
+plotly>=6.8.0
 
 # Data & Validation
 pydantic>=2.5.0
