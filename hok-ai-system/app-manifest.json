@@ -1,0 +1,27 @@
+{
+  "name": "HOK-AI System",
+  "url": "https://github.com/Mhmda1998/Enterprise-AI-Logistics-Solution",
+  "hook_attributes": {
+    "url": "https://example.com/webhook",
+    "active": false
+  },
+  "redirect_url": "https://github.com/Mhmda1998/Enterprise-AI-Logistics-Solution",
+  "public": false,
+  "default_events": [
+    "issues",
+    "issue_comment",
+    "pull_request",
+    "pull_request_review",
+    "push",
+    "release"
+  ],
+  "default_permissions": {
+    "administration": "write",
+    "issues": "write",
+    "pull_requests": "write",
+    "contents": "write",
+    "metadata": "read",
+    "statuses": "write",
+    "checks": "write"
+  }
+}
